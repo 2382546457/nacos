@@ -16,11 +16,11 @@ public interface PayloadOrBuilder extends
    * <code>.Metadata metadata = 2;</code>
    * @return The metadata.
    */
-  Metadata getMetadata();
+  com.xiaohe.nacos.api.grpc.proto.Metadata getMetadata();
   /**
    * <code>.Metadata metadata = 2;</code>
    */
-  MetadataOrBuilder getMetadataOrBuilder();
+  com.xiaohe.nacos.api.grpc.proto.MetadataOrBuilder getMetadataOrBuilder();
 
   /**
    * <code>.google.protobuf.Any body = 3;</code>

@@ -11,7 +11,7 @@ public interface MetadataOrBuilder extends
    * <code>string type = 3;</code>
    * @return The type.
    */
-  String getType();
+  java.lang.String getType();
   /**
    * <code>string type = 3;</code>
    * @return The bytes for type.
@@ -23,7 +23,7 @@ public interface MetadataOrBuilder extends
    * <code>string clientIp = 8;</code>
    * @return The clientIp.
    */
-  String getClientIp();
+  java.lang.String getClientIp();
   /**
    * <code>string clientIp = 8;</code>
    * @return The bytes for clientIp.
@@ -39,29 +39,29 @@ public interface MetadataOrBuilder extends
    * <code>map&lt;string, string&gt; headers = 7;</code>
    */
   boolean containsHeaders(
-      String key);
+      java.lang.String key);
   /**
    * Use {@link #getHeadersMap()} instead.
    */
-  @Deprecated
-  java.util.Map<String, String>
+  @java.lang.Deprecated
+  java.util.Map<java.lang.String, java.lang.String>
   getHeaders();
   /**
    * <code>map&lt;string, string&gt; headers = 7;</code>
    */
-  java.util.Map<String, String>
+  java.util.Map<java.lang.String, java.lang.String>
   getHeadersMap();
   /**
    * <code>map&lt;string, string&gt; headers = 7;</code>
    */
   /* nullable */
-String getHeadersOrDefault(
-      String key,
+java.lang.String getHeadersOrDefault(
+      java.lang.String key,
       /* nullable */
-String defaultValue);
+java.lang.String defaultValue);
   /**
    * <code>map&lt;string, string&gt; headers = 7;</code>
    */
-  String getHeadersOrThrow(
-      String key);
+  java.lang.String getHeadersOrThrow(
+      java.lang.String key);
 }

@@ -37,7 +37,7 @@ public final class NacosGrpcService {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\030nacos_grpc_service.proto\032\031google/proto" +
       "buf/any.proto\032\037google/protobuf/timestamp" +
       ".proto\"\203\001\n\010Metadata\022\014\n\004type\030\003 \001(\t\022\020\n\010cli" +
@@ -62,19 +62,19 @@ public final class NacosGrpcService {
     internal_static_Metadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Metadata_descriptor,
-        new String[] { "Type", "ClientIp", "Headers", });
+        new java.lang.String[] { "Type", "ClientIp", "Headers", });
     internal_static_Metadata_HeadersEntry_descriptor =
       internal_static_Metadata_descriptor.getNestedTypes().get(0);
     internal_static_Metadata_HeadersEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Metadata_HeadersEntry_descriptor,
-        new String[] { "Key", "Value", });
+        new java.lang.String[] { "Key", "Value", });
     internal_static_Payload_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Payload_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Payload_descriptor,
-        new String[] { "Metadata", "Body", });
+        new java.lang.String[] { "Metadata", "Body", });
     com.google.protobuf.AnyProto.getDescriptor();
     com.google.protobuf.TimestampProto.getDescriptor();
   }
