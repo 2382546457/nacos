@@ -1,4 +1,4 @@
-package com.xiaohe.nacos.api.grpc.proto;
+package com.xiaohe.nacos.api.grpc.auto;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -15,29 +15,29 @@ public final class BiRequestStreamGrpc {
   public static final java.lang.String SERVICE_NAME = "BiRequestStream";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.proto.Payload,
-      com.xiaohe.nacos.api.grpc.proto.Payload> getRequestBiStreamMethod;
+  private static volatile io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.auto.Payload,
+      com.xiaohe.nacos.api.grpc.auto.Payload> getRequestBiStreamMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "requestBiStream",
-      requestType = com.xiaohe.nacos.api.grpc.proto.Payload.class,
-      responseType = com.xiaohe.nacos.api.grpc.proto.Payload.class,
+      requestType = com.xiaohe.nacos.api.grpc.auto.Payload.class,
+      responseType = com.xiaohe.nacos.api.grpc.auto.Payload.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.proto.Payload,
-      com.xiaohe.nacos.api.grpc.proto.Payload> getRequestBiStreamMethod() {
-    io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.proto.Payload, com.xiaohe.nacos.api.grpc.proto.Payload> getRequestBiStreamMethod;
+  public static io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.auto.Payload,
+      com.xiaohe.nacos.api.grpc.auto.Payload> getRequestBiStreamMethod() {
+    io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.auto.Payload, com.xiaohe.nacos.api.grpc.auto.Payload> getRequestBiStreamMethod;
     if ((getRequestBiStreamMethod = BiRequestStreamGrpc.getRequestBiStreamMethod) == null) {
       synchronized (BiRequestStreamGrpc.class) {
         if ((getRequestBiStreamMethod = BiRequestStreamGrpc.getRequestBiStreamMethod) == null) {
           BiRequestStreamGrpc.getRequestBiStreamMethod = getRequestBiStreamMethod =
-              io.grpc.MethodDescriptor.<com.xiaohe.nacos.api.grpc.proto.Payload, com.xiaohe.nacos.api.grpc.proto.Payload>newBuilder()
+              io.grpc.MethodDescriptor.<com.xiaohe.nacos.api.grpc.auto.Payload, com.xiaohe.nacos.api.grpc.auto.Payload>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "requestBiStream"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.xiaohe.nacos.api.grpc.proto.Payload.getDefaultInstance()))
+                  com.xiaohe.nacos.api.grpc.auto.Payload.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.xiaohe.nacos.api.grpc.proto.Payload.getDefaultInstance()))
+                  com.xiaohe.nacos.api.grpc.auto.Payload.getDefaultInstance()))
               .setSchemaDescriptor(new BiRequestStreamMethodDescriptorSupplier("requestBiStream"))
               .build();
         }
@@ -99,8 +99,8 @@ public final class BiRequestStreamGrpc {
      * Sends a biStreamRequest
      * </pre>
      */
-    default io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload> requestBiStream(
-        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload> responseObserver) {
+    default io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload> requestBiStream(
+        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getRequestBiStreamMethod(), responseObserver);
     }
   }
@@ -137,8 +137,8 @@ public final class BiRequestStreamGrpc {
      * Sends a biStreamRequest
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload> requestBiStream(
-        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload> responseObserver) {
+    public io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload> requestBiStream(
+        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
           getChannel().newCall(getRequestBiStreamMethod(), getCallOptions()), responseObserver);
     }
@@ -209,7 +209,7 @@ public final class BiRequestStreamGrpc {
       switch (methodId) {
         case METHODID_REQUEST_BI_STREAM:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.requestBiStream(
-              (io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -222,8 +222,8 @@ public final class BiRequestStreamGrpc {
           getRequestBiStreamMethod(),
           io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
             new MethodHandlers<
-              com.xiaohe.nacos.api.grpc.proto.Payload,
-              com.xiaohe.nacos.api.grpc.proto.Payload>(
+              com.xiaohe.nacos.api.grpc.auto.Payload,
+              com.xiaohe.nacos.api.grpc.auto.Payload>(
                 service, METHODID_REQUEST_BI_STREAM)))
         .build();
   }
@@ -234,7 +234,7 @@ public final class BiRequestStreamGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.xiaohe.nacos.api.grpc.proto.NacosGrpcService.getDescriptor();
+      return com.xiaohe.nacos.api.grpc.auto.NacosGrpcService.getDescriptor();
     }
 
     @java.lang.Override

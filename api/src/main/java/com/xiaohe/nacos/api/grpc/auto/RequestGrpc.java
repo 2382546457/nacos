@@ -1,4 +1,4 @@
-package com.xiaohe.nacos.api.grpc.proto;
+package com.xiaohe.nacos.api.grpc.auto;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -15,29 +15,29 @@ public final class RequestGrpc {
   public static final java.lang.String SERVICE_NAME = "Request";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.proto.Payload,
-      com.xiaohe.nacos.api.grpc.proto.Payload> getRequestMethod;
+  private static volatile io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.auto.Payload,
+      com.xiaohe.nacos.api.grpc.auto.Payload> getRequestMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "request",
-      requestType = com.xiaohe.nacos.api.grpc.proto.Payload.class,
-      responseType = com.xiaohe.nacos.api.grpc.proto.Payload.class,
+      requestType = com.xiaohe.nacos.api.grpc.auto.Payload.class,
+      responseType = com.xiaohe.nacos.api.grpc.auto.Payload.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.proto.Payload,
-      com.xiaohe.nacos.api.grpc.proto.Payload> getRequestMethod() {
-    io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.proto.Payload, com.xiaohe.nacos.api.grpc.proto.Payload> getRequestMethod;
+  public static io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.auto.Payload,
+      com.xiaohe.nacos.api.grpc.auto.Payload> getRequestMethod() {
+    io.grpc.MethodDescriptor<com.xiaohe.nacos.api.grpc.auto.Payload, com.xiaohe.nacos.api.grpc.auto.Payload> getRequestMethod;
     if ((getRequestMethod = RequestGrpc.getRequestMethod) == null) {
       synchronized (RequestGrpc.class) {
         if ((getRequestMethod = RequestGrpc.getRequestMethod) == null) {
           RequestGrpc.getRequestMethod = getRequestMethod =
-              io.grpc.MethodDescriptor.<com.xiaohe.nacos.api.grpc.proto.Payload, com.xiaohe.nacos.api.grpc.proto.Payload>newBuilder()
+              io.grpc.MethodDescriptor.<com.xiaohe.nacos.api.grpc.auto.Payload, com.xiaohe.nacos.api.grpc.auto.Payload>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "request"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.xiaohe.nacos.api.grpc.proto.Payload.getDefaultInstance()))
+                  com.xiaohe.nacos.api.grpc.auto.Payload.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.xiaohe.nacos.api.grpc.proto.Payload.getDefaultInstance()))
+                  com.xiaohe.nacos.api.grpc.auto.Payload.getDefaultInstance()))
               .setSchemaDescriptor(new RequestMethodDescriptorSupplier("request"))
               .build();
         }
@@ -99,8 +99,8 @@ public final class RequestGrpc {
      * Sends a commonRequest
      * </pre>
      */
-    default void request(com.xiaohe.nacos.api.grpc.proto.Payload request,
-        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload> responseObserver) {
+    default void request(com.xiaohe.nacos.api.grpc.auto.Payload request,
+        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRequestMethod(), responseObserver);
     }
   }
@@ -137,8 +137,8 @@ public final class RequestGrpc {
      * Sends a commonRequest
      * </pre>
      */
-    public void request(com.xiaohe.nacos.api.grpc.proto.Payload request,
-        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload> responseObserver) {
+    public void request(com.xiaohe.nacos.api.grpc.auto.Payload request,
+        io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRequestMethod(), getCallOptions()), request, responseObserver);
     }
@@ -165,7 +165,7 @@ public final class RequestGrpc {
      * Sends a commonRequest
      * </pre>
      */
-    public com.xiaohe.nacos.api.grpc.proto.Payload request(com.xiaohe.nacos.api.grpc.proto.Payload request) {
+    public com.xiaohe.nacos.api.grpc.auto.Payload request(com.xiaohe.nacos.api.grpc.auto.Payload request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRequestMethod(), getCallOptions(), request);
     }
@@ -192,8 +192,8 @@ public final class RequestGrpc {
      * Sends a commonRequest
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.xiaohe.nacos.api.grpc.proto.Payload> request(
-        com.xiaohe.nacos.api.grpc.proto.Payload request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.xiaohe.nacos.api.grpc.auto.Payload> request(
+        com.xiaohe.nacos.api.grpc.auto.Payload request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRequestMethod(), getCallOptions()), request);
     }
@@ -219,8 +219,8 @@ public final class RequestGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_REQUEST:
-          serviceImpl.request((com.xiaohe.nacos.api.grpc.proto.Payload) request,
-              (io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.proto.Payload>) responseObserver);
+          serviceImpl.request((com.xiaohe.nacos.api.grpc.auto.Payload) request,
+              (io.grpc.stub.StreamObserver<com.xiaohe.nacos.api.grpc.auto.Payload>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -244,8 +244,8 @@ public final class RequestGrpc {
           getRequestMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              com.xiaohe.nacos.api.grpc.proto.Payload,
-              com.xiaohe.nacos.api.grpc.proto.Payload>(
+              com.xiaohe.nacos.api.grpc.auto.Payload,
+              com.xiaohe.nacos.api.grpc.auto.Payload>(
                 service, METHODID_REQUEST)))
         .build();
   }
@@ -256,7 +256,7 @@ public final class RequestGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.xiaohe.nacos.api.grpc.proto.NacosGrpcService.getDescriptor();
+      return com.xiaohe.nacos.api.grpc.auto.NacosGrpcService.getDescriptor();
     }
 
     @java.lang.Override
