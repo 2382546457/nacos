@@ -536,7 +536,7 @@ private static final long serialVersionUID = 0L;
      * <code>.Metadata metadata = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.xiaohe.nacos.api.grpc.proto.Metadata, com.xiaohe.nacos.api.grpc.proto.Metadata.Builder, com.xiaohe.nacos.api.grpc.proto.MetadataOrBuilder> 
+        com.xiaohe.nacos.api.grpc.proto.Metadata, com.xiaohe.nacos.api.grpc.proto.Metadata.Builder, com.xiaohe.nacos.api.grpc.proto.MetadataOrBuilder>
         getMetadataFieldBuilder() {
       if (metadataBuilder_ == null) {
         metadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<

@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
         java.lang.String, java.lang.String> defaultEntry =
             com.google.protobuf.MapEntry
             .<java.lang.String, java.lang.String>newDefaultInstance(
-                com.xiaohe.nacos.api.grpc.proto.NacosGrpcService.internal_static_Metadata_HeadersEntry_descriptor, 
+                com.xiaohe.nacos.api.grpc.proto.NacosGrpcService.internal_static_Metadata_HeadersEntry_descriptor,
                 com.google.protobuf.WireFormat.FieldType.STRING,
                 "",
                 com.google.protobuf.WireFormat.FieldType.STRING,
