@@ -1,7 +1,8 @@
 package com.xiaohe.nacos.common.utils;
 
 
-import com.cqfy.nacos.api.exception.runtime.NacosRuntimeException;
+
+import com.xiaohe.nacos.api.exception.runtime.NacosRuntimeException;
 
 import java.io.Closeable;
 import java.io.Externalizable;
@@ -9,7 +10,8 @@ import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.*;
 
-import static com.cqfy.nacos.api.exception.NacosException.SERVER_ERROR;
+import static com.xiaohe.nacos.api.exception.NacosException.SERVER_ERROR;
+
 
 /**
  * Utils for Class.
