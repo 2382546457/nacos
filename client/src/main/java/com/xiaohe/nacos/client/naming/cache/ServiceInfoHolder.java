@@ -148,7 +148,7 @@ public class ServiceInfoHolder implements Closeable {
         // groupName + @@ + serviceName + @@ + clusters
         String key = ServiceInfo.getKey(groupedServiceName, clusters);
         // 如果开启了故障转移模式，就优先从故障转移器中获得服务实例
-        if (failoverReactor.isFailoberSwitch()) {
+        if (failoverReactor.isFailoverSwitch()) {
             return failoverReactor.getService(key);
         }
         return serviceInfoMap.get(key);

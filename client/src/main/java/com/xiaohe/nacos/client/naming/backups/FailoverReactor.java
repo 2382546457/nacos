@@ -112,6 +112,14 @@ public class FailoverReactor {
         return Boolean.parseBoolean(switchParams.get(FAILOVER_MODE_PARAM));
     }
 
+    public ServiceInfo getService(String key) {
+        ServiceInfo serviceInfo = serviceMap.get(key);
+        if (serviceInfo == null) {
+            serviceInfo = new ServiceInfo();
+            serviceInfo.setName(key);
+        }
+        return serviceInfo;
+    }
 
     class DiskFileWriter extends TimerTask {
         @Override
